@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.12/58697792617f38bf86d8e26bc004aac505e516a9/slf4j-api-1.7.12-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.12/8e20852d05222dc286bf1c71d78d0531e177c317/slf4j-api-1.7.12.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.5.1/c270be0c1a27ecaed62ab322d39b115953069f2b/gwt-servlet-2.5.1-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-servlet/2.5.1/7b5c8c363c8afea7ba4090166f9c8db35e51b77b/gwt-servlet-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-dev/2.5.1/c596df7030a76da360da56e082f229f946adbd86/gwt-dev-2.5.1-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-dev/2.5.1/ba1f05ddd23b51c0d9c813956ca0ea72cb2e7a92/gwt-dev-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.5.1/c270be0c1a27ecaed62ab322d39b115953069f2b/gwt-user-2.5.1-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/com.google.gwt/gwt-user/2.5.1/a8afe9b0222db730f4ebd02a1aa329a5395473c5/gwt-user-2.5.1.jar" exported="true"/>
+	<classpathentry kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/org.json/json/20090211/c183aa3a2a6250293808bba12262c8920ce5a51c/json-20090211.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" kind="lib" path="C:/Users/colingan/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.0.0.GA/7a561191db2203550fbfa40d534d4997624cd369/validation-api-1.0.0.GA-sources.jar" exported="true"/>
+</classpath>

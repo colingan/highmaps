@@ -1,0 +1,71 @@
+/*
+ * author: Zheng Can (canzheng@tencent.com)
+ */
+
+apply plugin: "java"
+apply plugin: "eclipse"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+version = "1.0.0"
+
+ext {
+	versionGwt = "2.5.1"
+}
+	
+repositories {
+    maven {
+    	 url "http://10.163.160.203:8080/nexus/content/groups/public/"
+    }
+}
+
+dependencies {
+    compile "org.slf4j:slf4j-api:1.7.+"
+	compile module("com.google.gwt:gwt-servlet:${versionGwt}") {
+		dependency "com.google.gwt:gwt-user:${versionGwt}"
+		dependency "com.google.gwt:gwt-dev:${versionGwt}"
+	}
+}
+
+sourceSets.main.java.srcDirs = ["src"]
+sourceSets.main.resources.srcDirs = ["src"]
+[compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+
+eclipse {
+	project {
+		natures "org.springsource.ide.eclipse.gradle.core.nature"
+		natures "com.google.gwt.eclipse.core.gwtNature"
+		
+		buildCommand "com.google.gdt.eclipse.core.webAppProjectValidator"
+		buildCommand "com.google.gwt.eclipse.core.gwtProjectValidator"
+	}
+	
+	classpath {
+		containers "com.google.gwt.eclipse.core.GWT_CONTAINER"
+	}
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+jar {
+	baseName = "highmaps"
+	
+	manifest {
+        attributes "Implementation-Title": "Tencent MIG ADS - DMP highmaps Project"
+        attributes "Implementation-Version": version
+    }
+}
+
+task copylibs(type: Copy) {
+    into "$buildDir/output/lib"
+    from configurations.runtime
+}
+
+build.dependsOn(copylibs)
